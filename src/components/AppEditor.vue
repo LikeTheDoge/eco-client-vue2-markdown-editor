@@ -11,11 +11,12 @@ import '@toast-ui/editor/dist/toastui-editor.css'
 const ref_editor = ref(document.createElement('main'))
 
 onMounted(() => {
-    console.log(ref_editor.value)
     const editor = new Editor({
         el: ref_editor.value,
         previewStyle: 'vertical',
+        initialEditType: 'wysiwyg',
         height: 'auto',
+        initialValue:'# Header',
         minHeight: '400vh',
     });
 
@@ -24,12 +25,10 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-
 header {
     height: 48px;
     background-color: aqua;
 }
-
 </style>
 
 <style lang="scss">
@@ -75,11 +74,11 @@ header {
         border: none;
     }
 
-    .toastui-editor-main{
+    .toastui-editor-main {
         background: #fff;
         transition: all 0.3s ease;
 
-        &.toastui-editor-ww-mode{
+        &.toastui-editor-ww-mode {
             background: #eee;
         }
     }
