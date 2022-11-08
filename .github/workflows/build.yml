@@ -30,4 +30,4 @@ jobs:
       run: |
         docker build -t registry.cn-shanghai.aliyuncs.com/togii/eco-client-vue3-markdown-editor:latest .
         docker push registry.cn-shanghai.aliyuncs.com/togii/eco-client-vue3-markdown-editor:latest
-        docker push registry.cn-shanghai.aliyuncs.com/togii/eco-clientt-vue3-markdown-editor:${{ github.sha }}
+        docker push registry.cn-shanghai.aliyuncs.com/togii/eco-client-vue3-markdown-editor:${{ github.sha }}
