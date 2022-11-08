@@ -28,6 +28,6 @@ jobs:
       env:
         IMAGE_TAG: ${{ github.sha }} # 用于标记容器版本号
       run: |
-        docker build -t registry.cn-shanghai.aliyuncs.com/togii/eco-client-vue3-login:latest .
-        docker push registry.cn-shanghai.aliyuncs.com/togii/eco-client-vue3-login:latest
-        docker push registry.cn-shanghai.aliyuncs.com/togii/eco-client-vue3-login:${{ github.sha }}
+        docker build -t registry.cn-shanghai.aliyuncs.com/togii/eco-client-vue3-markdown-editor:latest .
+        docker push registry.cn-shanghai.aliyuncs.com/togii/eco-client-markdown-editor:latest
+        docker push registry.cn-shanghai.aliyuncs.com/togii/eco-client-markdown-editor:${{ github.sha }}
