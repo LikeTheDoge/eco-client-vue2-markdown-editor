@@ -1,6 +1,9 @@
 <template>
     <div>
         <div @click="startSave" :class="{ 'top-action-btn': true, 'is-saving': is_saving }" :title="'保存文件'">
+            <div class="save-btn">
+                <EIcon family="i_proj_edit" :name="'save'" :size="24"></EIcon>
+            </div>
             <div class="remark-input">
                 <input ref="ref_input" v-model="val_input" placeholder="请输入修改备注信息" />
                 <div @click.stop="submitSave" class="done-btn">
@@ -9,9 +12,6 @@
                 <div @click.stop="cancelSave" class="cancel-btn">
                     <EIcon family="i_base" :name="'close'" :size="16"></EIcon>
                 </div>
-            </div>
-            <div class="save-btn">
-                <EIcon family="i_proj_edit" :name="'save'" :size="24"></EIcon>
             </div>
         </div>
     </div>
