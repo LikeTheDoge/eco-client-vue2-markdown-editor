@@ -1,3 +1,3 @@
 export default {
-    "baseUrlName": "md-editor"
+    "baseUrlName": "text-editor"
 }

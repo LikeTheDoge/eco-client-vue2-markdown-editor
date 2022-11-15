@@ -14,5 +14,18 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  server: {
+    proxy: ((paths: string[]) => {
+      const proxy = {} as any
+      paths.forEach(path => {
+        proxy[path] = {
+          // target: 'http://admineco.dameng.com:9999/',
+          target: 'http://192.168.161.10:11080/',
+          changeOrigin: true,
+        }
+      })
+      return proxy
+    })(['/eco-plat-static-server/','/login/','/file/','/eco-system-server-biz/'])
   }
 })

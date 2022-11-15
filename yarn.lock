@@ -261,6 +261,11 @@
     "@vue/compiler-dom" "3.2.41"
     "@vue/shared" "3.2.41"
 
+"@vue/devtools-api@^6.4.5":
+  version "6.4.5"
+  resolved "http://1.15.102.208:4873/@vue%2fdevtools-api/-/devtools-api-6.4.5.tgz#d54e844c1adbb1e677c81c665ecef1a2b4bb8380"
+  integrity sha512-JD5fcdIuFxU4fQyXUu3w2KpAJHzTVdN+p4iOX2lMWSHMOoQdMAcpFLZzm9Z/2nmsoZ1a96QEhZ26e50xLBsgOQ==
+
 "@vue/reactivity-transform@3.2.41":
   version "3.2.41"
   resolved "http://1.15.102.208:4873/@vue%2freactivity-transform/-/reactivity-transform-3.2.41.tgz#9ff938877600c97f646e09ac1959b5150fb11a0c"
@@ -349,6 +354,28 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+asynckit@^0.4.0:
+  version "0.4.0"
+  resolved "http://1.15.102.208:4873/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
+  integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
+
+axios@^0.27.2:
+  version "0.27.2"
+  resolved "http://1.15.102.208:4873/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
+  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
+  dependencies:
+    follow-redirects "^1.14.9"
+    form-data "^4.0.0"
+
+axios@^1.1.3:
+  version "1.1.3"
+  resolved "http://1.15.102.208:4873/axios/-/axios-1.1.3.tgz#8274250dada2edf53814ed7db644b9c2866c1e35"
+  integrity sha512-00tXVRwKx/FZr/IDVFt4C+f9FYairX517WoGCL6dpOntqLkZofjhu43F/Xl44UOpqa+9sLFDrG/XAnFsUYgkDA==
+  dependencies:
+    follow-redirects "^1.15.0"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "http://1.15.102.208:4873/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
@@ -431,6 +458,13 @@ color-name@1.1.3:
   resolved "http://1.15.102.208:4873/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==
 
+combined-stream@^1.0.8:
+  version "1.0.8"
+  resolved "http://1.15.102.208:4873/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
+  integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+  dependencies:
+    delayed-stream "~1.0.0"
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "http://1.15.102.208:4873/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
@@ -499,6 +533,11 @@ define-properties@^1.1.3, define-properties@^1.1.4:
     has-property-descriptors "^1.0.0"
     object-keys "^1.1.1"
 
+delayed-stream@~1.0.0:
+  version "1.0.0"
+  resolved "http://1.15.102.208:4873/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+  integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
+
 delegates@^1.0.0:
   version "1.0.0"
   resolved "http://1.15.102.208:4873/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
@@ -523,6 +562,35 @@ dompurify@^2.3.3:
   version "2.4.0"
   resolved "http://1.15.102.208:4873/dompurify/-/dompurify-2.4.0.tgz#c9c88390f024c2823332615c9e20a453cf3825dd"
   integrity sha512-Be9tbQMZds4a3C6xTmz68NlMfeONA//4dOavl/1rNw50E+/QO0KVpbcU0PcaW0nsQxurXls9ZocqFxk8R2mWEA==
+
+e-auth@^0.0.12:
+  version "0.0.12"
+  resolved "http://1.15.102.208:4873/e-auth/-/e-auth-0.0.12.tgz#d7d3e7e96c94f70c681e2cc6603af4bc8f35a6f9"
+  integrity sha512-RZnBf86DRcQyFASqLEOyuKDi78ajmjMIxRrxCAxTm/AIEz0MQsv1IykjBvAnsLN3pMbYawpwLnOVUkvSGTNbpQ==
+  dependencies:
+    axios "^0.27.2"
+    e-user "^0.0.12"
+    js-cookie "^3.0.1"
+
+e-model@^0.0.12:
+  version "0.0.12"
+  resolved "http://1.15.102.208:4873/e-model/-/e-model-0.0.12.tgz#fb3a76abf5f36dc852faaefc55176c4d40689d63"
+  integrity sha512-OvTHNNkf7EkuSMJCtoVovyqgXdZnB6Ci3jfMbT25gUrGMTywnm8fnyVEqEO2e1k1cDOF/+W4KozMoFcOKlZzyQ==
+
+e-request@^0.0.12:
+  version "0.0.12"
+  resolved "http://1.15.102.208:4873/e-request/-/e-request-0.0.12.tgz#8dbf4fb576de2db43d5a8acf59d9169014afe967"
+  integrity sha512-ltpxsQ2L8M5XWN2yr+jlvmAE7+Jeu9qELeNLSsawpBVetxNJdVedRQpxNKTfa0MiOQ9P8NjUsAeG3/6OwywvZw==
+  dependencies:
+    axios "^0.27.2"
+
+e-user@^0.0.12:
+  version "0.0.12"
+  resolved "http://1.15.102.208:4873/e-user/-/e-user-0.0.12.tgz#8276963f2c6e9d491f8fe7f8681d3f7764ac194b"
+  integrity sha512-sLNVK4V/n1K2ER7Fh4pYQe+b0SumVMyFg8hIje2wLpQBG1WLctmWOiAkunBsQ3+s+Q7PpptaqliX907Vr/gKhQ==
+  dependencies:
+    axios "^0.27.2"
+    js-cookie "^3.0.1"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -729,6 +797,20 @@ fill-range@^7.0.1:
   integrity sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   dependencies:
     to-regex-range "^5.0.1"
+
+follow-redirects@^1.14.9, follow-redirects@^1.15.0:
+  version "1.15.2"
+  resolved "http://1.15.102.208:4873/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
+  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
+
+form-data@^4.0.0:
+  version "4.0.0"
+  resolved "http://1.15.102.208:4873/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
+  integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
 
 fresh@~0.5.2:
   version "0.5.2"
@@ -1031,6 +1113,11 @@ isexe@^2.0.0:
   resolved "http://1.15.102.208:4873/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
+js-cookie@^3.0.1:
+  version "3.0.1"
+  resolved "http://1.15.102.208:4873/js-cookie/-/js-cookie-3.0.1.tgz#9e39b4c6c2f56563708d7d31f6f5f21873a92414"
+  integrity sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==
+
 json-parse-better-errors@^1.0.1:
   version "1.0.2"
   resolved "http://1.15.102.208:4873/json-parse-better-errors/-/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
@@ -1141,7 +1228,7 @@ mime-db@1.52.0:
   resolved "http://1.15.102.208:4873/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
   integrity sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
 
-mime-types@^2.1.18, mime-types@~2.1.24, mime-types@~2.1.34:
+mime-types@^2.1.12, mime-types@^2.1.18, mime-types@~2.1.24, mime-types@~2.1.34:
   version "2.1.35"
   resolved "http://1.15.102.208:4873/mime-types/-/mime-types-2.1.35.tgz#381a871b62a734450660ae3deee44813f70d959a"
   integrity sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
@@ -1388,6 +1475,11 @@ prosemirror-view@^1.18.7, prosemirror-view@^1.27.0:
     prosemirror-model "^1.16.0"
     prosemirror-state "^1.0.0"
     prosemirror-transform "^1.1.0"
+
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "http://1.15.102.208:4873/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
 
 read-pkg@^3.0.0:
   version "3.0.0"
@@ -1686,6 +1778,13 @@ vite@^3.0.9:
     rollup "^2.79.1"
   optionalDependencies:
     fsevents "~2.3.2"
+
+vue-router@^4.1.6:
+  version "4.1.6"
+  resolved "http://1.15.102.208:4873/vue-router/-/vue-router-4.1.6.tgz#b70303737e12b4814578d21d68d21618469375a1"
+  integrity sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==
+  dependencies:
+    "@vue/devtools-api" "^6.4.5"
 
 vue-tsc@^0.40.7:
   version "0.40.13"

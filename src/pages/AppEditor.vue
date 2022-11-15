@@ -1,26 +1,46 @@
 <template>
-    <div class="ref_editor" ref="ref_editor">
+    <div class="ref_editor markdown-body" ref="ref_editor">
     </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import Editor from '@toast-ui/editor'
 import '@toast-ui/editor/dist/toastui-editor.css'
+import { getFileInfoById } from '../request/file';
+import type { FileInfo } from '@/models/base';
 
+let editor: Editor | null = null
+let fileInfo: FileInfo | null = null
 const ref_editor = ref(document.createElement('main'))
+const route = useRoute()
 
-onMounted(() => {
-    const editor = new Editor({
-        el: ref_editor.value,
-        previewStyle: 'vertical',
-        initialEditType: 'wysiwyg',
-        height: 'auto',
-        initialValue:'# Header',
-        minHeight: '400vh',
-    });
+const getEditor = () => editor
+const getFileInfo = () => fileInfo
+const reflash = async () => {
+    const fileId = ((data: string | string[]) => data instanceof Array ? data.join('') : data)(route.params.fileId)
+    fileInfo = await getFileInfoById(fileId)
+    const downloadUrl = fileInfo.downloadUrl
+    const content = await fetch(downloadUrl).then(response => response.text())
 
-})
+    if (!editor) {
+        editor = new Editor({
+            el: ref_editor.value,
+            previewStyle: 'vertical',
+            initialEditType: 'wysiwyg',
+            height: 'auto',
+            initialValue: content,
+            minHeight: '400vh',
+        });
+    } else {
+        editor.setMarkdown(content)
+    }
+}
+
+defineExpose({ getEditor, getFileInfo, reflash })
+
+onMounted(reflash)
 
 </script>
 
@@ -38,7 +58,7 @@ header {
     }
 
     .ProseMirror.toastui-editor-contents {
-        min-height: calc(100vh - 222px); //48px + 45px + 28px + 1px + 50px*2
+        min-height: calc(100vh - 246px); //72px + 45px + 28px + 1px + 50px*2
         max-width: 960px;
         margin: 50px auto;
         padding: 56px 72px;
@@ -59,7 +79,7 @@ header {
     .toastui-editor-toolbar {
         background: #fff;
         position: sticky;
-        top: 48px;
+        top: 72px;
         z-index: 21;
         box-shadow: 0 5px 7px -3px rgb(0 0 0 / 10%);
         display: flex;
