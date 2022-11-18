@@ -28,7 +28,7 @@ const props = defineProps({
 })
 
 
-const is_saving = ref(true)
+const is_saving = ref(false)
 const ref_input = ref(document.createElement('input'))
 const val_input = ref('')
 
